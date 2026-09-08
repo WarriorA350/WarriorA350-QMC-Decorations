@@ -262,7 +262,7 @@ const RECORD = {
     category: "badges",
     group: "Ribbons",
     name: "Antarctica Service Medal",
-    suffix: "4th Award",
+    suffix: "5th Award",
     image: "https://i.imgur.com/tYGDRTR.png"
   },
 {
