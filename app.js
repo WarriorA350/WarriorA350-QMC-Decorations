@@ -341,13 +341,6 @@ function profile() {
 
         </div>
 
-
-        <div class="generated">
-
-          Generated from tracker data.
-          Title: ${esc(record.username)}
-          | Service Record File
-
         </div>
 
       </div>
