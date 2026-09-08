@@ -36,6 +36,40 @@ document.getElementById("tabs").addEventListener("click", event => {
   });
 });
 
+/* Lightbox Modal Logic */
+function openLightbox(src, title) {
+  let modal = document.getElementById("imageLightbox");
+  if (!modal) {
+    modal = document.createElement("div");
+    modal.id = "imageLightbox";
+    modal.className = "image-modal";
+    modal.innerHTML = `
+      <div class="modal-content">
+        <button type="button" class="modal-close" aria-label="Close">&times;</button>
+        <img id="modalImg" src="" alt="Enlarged award">
+        <div id="modalCaption" class="modal-caption"></div>
+      </div>
+    `;
+    document.body.appendChild(modal);
+
+    modal.addEventListener("click", (e) => {
+      if (e.target === modal || e.target.classList.contains("modal-close")) {
+        modal.classList.remove("open");
+      }
+    });
+
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape" && modal.classList.contains("open")) {
+        modal.classList.remove("open");
+      }
+    });
+  }
+
+  document.getElementById("modalImg").src = src;
+  document.getElementById("modalCaption").textContent = title || "";
+  modal.classList.add("open");
+}
+
 /* Prevent HTML from breaking the page */
 function esc(value = "") {
   return String(value).replace(/[&<>"']/g, character => ({
@@ -49,12 +83,10 @@ function esc(value = "") {
 
 /* Get award image */
 function imgFor(award) {
-  /* Direct image URL from data.js */
   if (award.image) {
     return award.image;
   }
 
-  /* Image-map fallback */
   const key = (
     award.imageKey ||
     award.name ||
@@ -137,6 +169,7 @@ function awardCard(award) {
                 alt="${esc(award.name)}"
                 loading="lazy"
                 onerror="handleAwardImageError(this)"
+                onclick="openLightbox('${esc(image)}', '${esc(award.name)}')"
               >
             `
             : `
@@ -261,10 +294,8 @@ function render() {
   const record = typeof RECORD !== "undefined" ? RECORD : {};
   const username = record.username || "WARRIORA350";
 
-  /* Browser tab title */
   document.title = `${username} | Service Record File`;
 
-  /* Header */
   const titleEl = document.getElementById("pageTitle");
   if (titleEl) {
     titleEl.textContent = `${username.toUpperCase()} | SERVICE RECORD FILE`;
@@ -275,7 +306,6 @@ function render() {
     subEl.textContent = "PUBLIC SERVICE RECORD";
   }
 
-  /* Navigation */
   const tabsContainer = document.getElementById("tabs");
   if (tabsContainer) {
     tabsContainer.innerHTML = tabs
@@ -290,7 +320,6 @@ function render() {
       .join("");
   }
 
-  /* Main content */
   const appContainer = document.getElementById("app");
   if (appContainer) {
     appContainer.innerHTML = active === "PROFILE" ? profile() : decorations();
