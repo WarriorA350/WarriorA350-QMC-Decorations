@@ -22,15 +22,12 @@ fetch("image-map.json")
     render();
   });
 
-
 /* Tab navigation */
 document.getElementById("tabs").addEventListener("click", event => {
   const button = event.target.closest("button[data-tab]");
-
   if (!button) return;
 
   active = button.dataset.tab;
-
   render();
 
   window.scrollTo({
@@ -38,7 +35,6 @@ document.getElementById("tabs").addEventListener("click", event => {
     behavior: "smooth"
   });
 });
-
 
 /* Prevent HTML from breaking the page */
 function esc(value = "") {
@@ -51,10 +47,8 @@ function esc(value = "") {
   }[character]));
 }
 
-
 /* Get award image */
 function imgFor(award) {
-
   /* Direct image URL from data.js */
   if (award.image) {
     return award.image;
@@ -76,10 +70,8 @@ function imgFor(award) {
   );
 }
 
-
 /* Automatically calculate service time */
 function calculateTimeOfService(joinDate) {
-
   if (!joinDate) return "";
 
   const match = String(joinDate)
@@ -90,76 +82,53 @@ function calculateTimeOfService(joinDate) {
 
   const day = Number(match[1]);
   const month = Number(match[2]);
-
   let year = Number(match[3]);
 
   if (year < 100) {
     year += 2000;
   }
 
-  const startDate = new Date(
-    year,
-    month - 1,
-    day
-  );
-
+  const startDate = new Date(year, month - 1, day);
   if (Number.isNaN(startDate.getTime())) {
     return "";
   }
 
   const today = new Date();
+  const todayUTC = Date.UTC(today.getFullYear(), today.getMonth(), today.getDate());
+  const startUTC = Date.UTC(startDate.getFullYear(), startDate.getMonth(), startDate.getDate());
 
-  const todayUTC = Date.UTC(
-    today.getFullYear(),
-    today.getMonth(),
-    today.getDate()
-  );
-
-  const startUTC = Date.UTC(
-    startDate.getFullYear(),
-    startDate.getMonth(),
-    startDate.getDate()
-  );
-
-  const days = Math.floor(
-    (todayUTC - startUTC) / 86400000
-  );
-
+  const days = Math.floor((todayUTC - startUTC) / 86400000);
   if (days < 0) return "";
 
   return `${days} day${days === 1 ? "" : "s"}`;
 }
 
-
 /* Profile field */
 function field(label, value) {
-
   return `
     <div class="field">
-
-      <div class="label">
-        ${esc(label)}
-      </div>
-
-      <div class="value">
-        ${esc(value || "—")}
-      </div>
-
+      <div class="label">${esc(label)}</div>
+      <div class="value">${esc(value || "—")}</div>
     </div>
   `;
 }
 
+/* Fallback handler for award image error */
+function handleAwardImageError(img) {
+  img.onerror = null;
+  const parent = img.parentElement;
+  if (parent) {
+    parent.innerHTML = '<div class="image-placeholder">NO IMAGE</div>';
+  }
+}
 
 /* Individual award */
 function awardCard(award) {
-
   const image = imgFor(award);
 
   return `
     <article class="award-card">
-
       <div class="award-image">
-
         ${
           image
             ? `
@@ -167,10 +136,7 @@ function awardCard(award) {
                 src="${esc(image)}"
                 alt="${esc(award.name)}"
                 loading="lazy"
-                onerror="
-                  this.style.display='none';
-                  this.parentElement.innerHTML='<div class=&quot;image-placeholder&quot;>IMAGE ERROR</div>';
-                "
+                onerror="handleAwardImageError(this)"
               >
             `
             : `
@@ -179,15 +145,12 @@ function awardCard(award) {
               </div>
             `
         }
-
       </div>
 
       <div class="award-copy">
-
         <div class="award-name">
           ${esc(award.name)}
         </div>
-
         ${
           award.suffix
             ? `
@@ -197,83 +160,53 @@ function awardCard(award) {
             `
             : ""
         }
-
       </div>
-
     </article>
   `;
 }
 
-
 /* Award sections */
 function section(title, awards = []) {
-
   const groups = {};
 
   awards.forEach(award => {
-
     const group = award.group || "Group 1";
-
     if (!groups[group]) {
       groups[group] = [];
     }
-
     groups[group].push(award);
   });
 
-
   const groupHTML = Object.keys(groups)
     .map(group => {
-
       return `
         <div class="award-group">
-
-          <h2>
-            ${esc(group)}
-          </h2>
-
+          <h2>${esc(group)}</h2>
           <div class="gold-rule"></div>
-
           <div class="award-list">
             ${groups[group].map(awardCard).join("")}
           </div>
-
         </div>
       `;
-
     })
     .join("");
 
-
   return `
     <section class="record-panel">
-
-      <div class="panel-title">
-        ${esc(title)}
-      </div>
-
+      <div class="panel-title">${esc(title)}</div>
       <div class="panel-body">
-
         ${
           groupHTML ||
-          `
-            <div class="empty">
-              No records have been added yet.
-            </div>
-          `
+          `<div class="empty">No records have been added yet.</div>`
         }
-
       </div>
-
     </section>
   `;
 }
 
-
 /* Profile page */
 function profile() {
-
-  const record = RECORD;
+  const record = typeof RECORD !== "undefined" ? RECORD : {};
 
   const serviceTime =
     record.timeOfService ||
@@ -281,129 +214,88 @@ function profile() {
 
   return `
     <section class="record-panel profile-panel">
-
-      <div class="panel-title">
-        PROFILE
-      </div>
+      <div class="panel-title">PROFILE</div>
 
       <div class="panel-body profile-body">
-
         <div class="profile-photo-wrap">
-
           <img
             class="profile-photo"
             src="${esc(record.profileImage)}"
             alt="Profile photo"
+            onerror="this.style.opacity='0.2'"
           >
-
         </div>
-
 
         <div class="profile-grid">
-
           ${field("USERNAME", record.username)}
-
           ${field("ROBLOX ID", record.robloxId)}
 
-
           ${field("DISCORD ID", record.discordId)}
-
           ${field("RANK", record.rank)}
 
-
           ${field("COMMAND", record.command)}
-
           ${field("DIVISION", record.division)}
 
-
-          ${field(
-            "BRIGADE/BATTALION/GROUP",
-            record.brigade
-          )}
-
+          ${field("BRIGADE/BATTALION/GROUP", record.brigade)}
           ${field("COMPANY", record.company)}
 
-
           ${field("JOIN DATE", record.joinDate)}
-
-          ${field(
-            "UNIT TIME OF SERVICE",
-            serviceTime
-          )}
-
+          ${field("UNIT TIME OF SERVICE", serviceTime)}
 
           ${field("POSITION", record.position)}
-
-          ${field(
-            "POSITION DATE OF HIRE",
-            record.positionDate
-          )}
-
+          ${field("POSITION DATE OF HIRE", record.positionDate)}
         </div>
-
-        </div>
-
       </div>
-
     </section>
   `;
 }
 
-
 /* Decorations page */
 function decorations() {
-
-  return section(
-    "DECORATIONS",
-    RECORD.awards || []
-  );
+  const awards = typeof RECORD !== "undefined" && RECORD.awards ? RECORD.awards : [];
+  return section("DECORATIONS", awards);
 }
-
 
 /* Render the page */
 function render() {
-
-  const username =
-    RECORD.username || "YOURUSERNAME";
-
+  const record = typeof RECORD !== "undefined" ? RECORD : {};
+  const username = record.username || "WARRIORA350";
 
   /* Browser tab title */
-  document.title =
-    `${username} | Service Record File`;
-
+  document.title = `${username} | Service Record File`;
 
   /* Header */
-  document.getElementById("pageTitle").textContent =
-    `${username} | SERVICE RECORD FILE`;
+  const titleEl = document.getElementById("pageTitle");
+  if (titleEl) {
+    titleEl.textContent = `${username.toUpperCase()} | SERVICE RECORD FILE`;
+  }
 
-
-  document.getElementById("subtitle").textContent =
-    "PUBLIC SERVICE RECORD";
-
+  const subEl = document.getElementById("subtitle");
+  if (subEl) {
+    subEl.textContent = "PUBLIC SERVICE RECORD";
+  }
 
   /* Navigation */
-  document.getElementById("tabs").innerHTML =
-    tabs.map(tab => {
-
-      return `
+  const tabsContainer = document.getElementById("tabs");
+  if (tabsContainer) {
+    tabsContainer.innerHTML = tabs
+      .map(tab => `
         <button
           data-tab="${tab}"
           class="tab ${active === tab ? "active" : ""}"
         >
           ${tab}
         </button>
-      `;
-
-    }).join("");
-
+      `)
+      .join("");
+  }
 
   /* Main content */
-  document.getElementById("app").innerHTML =
-    active === "PROFILE"
-      ? profile()
-      : decorations();
+  const appContainer = document.getElementById("app");
+  if (appContainer) {
+    appContainer.innerHTML = active === "PROFILE" ? profile() : decorations();
+  }
 }
-
 
 /* Initial render */
 render();
