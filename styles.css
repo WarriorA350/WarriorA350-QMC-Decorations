@@ -1,79 +1,381 @@
-:root{
-  --green:#20261b;
-  --green2:#414c17;
-  --cream:#ece9e0;
-  --paper:#fff;
-  --gold:#d6ad20;
-  --gold2:#c69a0d;
-  --ink:#282a25;
-  --muted:#6d6e68;
-  --border:#c9c4b6;
-}
-*{box-sizing:border-box}
-html{background:#11150f}
-body{margin:0;color:var(--ink);font-family:Inter,Arial,sans-serif;background:var(--cream);min-height:100vh}
-body:before{content:"";display:block;height:22px;background:var(--green);border-bottom:3px solid var(--gold)}
-.masthead{background:linear-gradient(100deg,#252b20,#171c16);color:#fff;border-bottom:1px solid #8f7b31}
-.masthead-inner{max-width:1260px;margin:auto;padding:22px 0 24px}
-.masthead h1{font:800 40px/1 Barlow Condensed,sans-serif;letter-spacing:2px;margin:0 0 14px;text-transform:uppercase}
-.masthead p{font:500 16px/1 Barlow Condensed,sans-serif;letter-spacing:1.2px;color:#c9b77a;margin:0;text-transform:uppercase}
-.tabs{height:56px;background:#fff;border-bottom:1px solid #aaa79e;box-shadow:0 1px 3px #0002}
-.tabs-inner{max-width:1260px;margin:auto;height:100%;display:flex;align-items:stretch;overflow-x:auto}
-.tab{border:0;background:#fff;padding:0 16px;font:700 17px Barlow Condensed,sans-serif;letter-spacing:1px;color:#33382f;cursor:pointer;white-space:nowrap;border-bottom:3px solid transparent}
-.tab:hover{background:#f3f0e6}.tab.active{background:#f4f0df;border-bottom-color:var(--gold);color:#4a531d}
-.page{max-width:1260px;margin:28px auto 60px}
-.record-panel{background:var(--paper);border:1px solid var(--border);border-radius:4px;overflow:hidden;box-shadow:0 2px 8px #0001}
-.panel-title{background:linear-gradient(100deg,#46521c,#303a16);color:#fff;padding:14px 18px;font:700 23px Barlow Condensed,sans-serif;letter-spacing:1.5px;border-bottom:2px solid var(--gold);text-transform:uppercase}
-.panel-body{padding:18px 20px 26px}.profile-body{display:grid;grid-template-columns:245px 1fr;gap:28px;position:relative;padding-bottom:62px}
-.profile-photo-wrap{width:214px;height:160px;border:1px solid #9b927a;border-radius:4px;padding:2px;box-shadow:0 1px 4px #0002}.profile-photo{width:100%;height:100%;object-fit:cover;border-radius:2px}
-.profile-grid{display:grid;grid-template-columns:1fr 1fr;column-gap:65px;row-gap:22px}.field .label{font:700 15px Barlow Condensed,sans-serif;letter-spacing:1.2px;color:#66665f;margin-bottom:5px}.field .value{font-size:16px;font-weight:600;line-height:1.3}
-.generated{position:absolute;bottom:12px;left:0;color:#72736d;font-size:13px}.generated code{font-family:monospace}
-.award-group{margin:2px 0 22px}.award-group h2{font:700 22px Barlow Condensed,sans-serif;letter-spacing:1px;margin:0 0 7px}.gold-rule{height:2px;background:var(--gold2);margin-bottom:10px}.award-list{
-  display:grid;
-  grid-template-columns:repeat(3, 1fr);
-  gap:16px;
-}.award-card{width:100%;min-height:118px;border:1px solid #c8c3b6;border-radius:4px;background:#faf9f5;display:flex;align-items:center;padding:12px;gap:14px}.award-image{width:90px;height:90px;border:1px solid #c9c3b4;border-radius:6px;background:#fff;display:flex;align-items:center;justify-content:center;flex:none;overflow:hidden}.award-image img{width:100%;height:100%;object-fit:contain}.image-placeholder{font:700 12px Barlow Condensed,sans-serif;color:#9b978d;letter-spacing:1px}.award-name{font:700 18px/1.1 Barlow Condensed,sans-serif}.award-suffix{font-size:14px;color:#6b6c66;margin-top:6px}.empty{padding:25px 5px;color:#777;font-size:14px}.operation{padding:16px;border-bottom:1px solid #ddd8cb}.operation:last-child{border-bottom:0}.operation-title{font:700 21px Barlow Condensed,sans-serif}.operation-detail{margin-top:5px;color:#6d6e68}
-.footer{text-align:center;color:#777;padding:0 0 35px;font-size:12px}
-@media(max-width:900px){
-  .masthead-inner,.page{
-    margin-left:16px;
-    margin-right:16px
-  }
-
-  .masthead h1{font-size:31px}
-
-  .profile-body{grid-template-columns:1fr}
-
-  .profile-grid{grid-template-columns:1fr}
-
-  .award-list{
-    grid-template-columns:repeat(2,1fr);
-  }
-
-  .award-card{
-    width:100%;
-  }
+:root {
+  --green: #20261b;
+  --green2: #414c17;
+  --cream: #ece9e0;
+  --paper: #fff;
+  --gold: #d6ad20;
+  --gold2: #c69a0d;
+  --ink: #282a25;
+  --muted: #6d6e68;
+  --border: #c9c4b6;
 }
 
-@media(max-width:600px){
-  body:before{height:12px}
-  .tabs{height:52px}
-  .tab{padding:0 12px;font-size:16px}
-  .page{margin-top:16px}
-  .panel-title{font-size:21px}
-  .panel-body{padding:15px}
-  .profile-photo-wrap{
-    width:100%;
-    max-width:300px;
-    height:190px
-  }
-
-  .award-list{
-    grid-template-columns:1fr;
-  }
-
-  .award-card{min-height:104px}
-  .award-image{width:76px;height:76px}
-  .award-name{font-size:17px}
+* {
+  box-sizing: border-box;
 }
 
+html {
+  background: #11150f;
+}
+
+body {
+  margin: 0;
+  color: var(--ink);
+  font-family: Inter, Arial, sans-serif;
+  background: var(--cream);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+body:before {
+  content: "";
+  display: block;
+  height: 22px;
+  background: var(--green);
+  border-bottom: 3px solid var(--gold);
+}
+
+/* Masthead Header */
+.masthead {
+  background: linear-gradient(100deg, #252b20, #171c16);
+  color: #fff;
+  border-bottom: 1px solid #8f7b31;
+}
+
+.masthead-inner {
+  max-width: 1260px;
+  margin: auto;
+  padding: 22px 20px 24px;
+}
+
+.masthead h1 {
+  font: 800 40px/1 "Barlow Condensed", sans-serif;
+  letter-spacing: 2px;
+  margin: 0 0 14px;
+  text-transform: uppercase;
+}
+
+.masthead p {
+  font: 600 15px/1 "Barlow Condensed", sans-serif;
+  letter-spacing: 1.4px;
+  color: #c9b77a;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+/* Tabs Navigation */
+.tabs {
+  height: 56px;
+  background: #fff;
+  border-bottom: 1px solid #aaa79e;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+}
+
+.tabs-inner {
+  max-width: 1260px;
+  margin: auto;
+  height: 100%;
+  display: flex;
+  align-items: stretch;
+  overflow-x: auto;
+  padding: 0 20px;
+}
+
+.tab {
+  border: 0;
+  background: #fff;
+  padding: 0 20px;
+  font: 700 17px "Barlow Condensed", sans-serif;
+  letter-spacing: 1px;
+  color: #33382f;
+  cursor: pointer;
+  white-space: nowrap;
+  border-bottom: 3px solid transparent;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+
+.tab:hover {
+  background: #f3f0e6;
+}
+
+.tab.active {
+  background: #f4f0df;
+  border-bottom-color: var(--gold);
+  color: #4a531d;
+}
+
+/* Main Container */
+.page {
+  max-width: 1260px;
+  width: 100%;
+  margin: 28px auto 60px;
+  padding: 0 20px;
+  flex: 1;
+}
+
+/* Record Card Panels */
+.record-panel {
+  background: var(--paper);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.panel-title {
+  background: linear-gradient(100deg, #46521c, #303a16);
+  color: #fff;
+  padding: 14px 20px;
+  font: 700 23px "Barlow Condensed", sans-serif;
+  letter-spacing: 1.5px;
+  border-bottom: 2px solid var(--gold);
+  text-transform: uppercase;
+}
+
+.panel-body {
+  padding: 24px 24px 30px;
+}
+
+/* Profile Panel Layout */
+.profile-body {
+  display: grid;
+  grid-template-columns: 245px 1fr;
+  gap: 36px;
+  align-items: start;
+}
+
+.profile-photo-wrap {
+  width: 220px;
+  height: 165px;
+  border: 1px solid #9b927a;
+  border-radius: 4px;
+  padding: 2px;
+  background: #fff;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+}
+
+.profile-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 2px;
+  display: block;
+}
+
+.profile-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 65px;
+  row-gap: 22px;
+}
+
+.field .label {
+  font: 700 15px "Barlow Condensed", sans-serif;
+  letter-spacing: 1.2px;
+  color: #66665f;
+  margin-bottom: 4px;
+  text-transform: uppercase;
+}
+
+.field .value {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.3;
+  color: var(--ink);
+  word-break: break-word;
+}
+
+/* Decorations Tab Layout */
+.award-group {
+  margin: 4px 0 28px;
+}
+
+.award-group h2 {
+  font: 700 22px "Barlow Condensed", sans-serif;
+  letter-spacing: 1px;
+  margin: 0 0 7px;
+  color: var(--green);
+  text-transform: uppercase;
+}
+
+.gold-rule {
+  height: 2px;
+  background: var(--gold2);
+  margin-bottom: 16px;
+}
+
+.award-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.award-card {
+  width: 100%;
+  min-height: 118px;
+  border: 1px solid #c8c3b6;
+  border-radius: 4px;
+  background: #faf9f5;
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  gap: 14px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+}
+
+.award-image {
+  width: 90px;
+  height: 90px;
+  border: 1px solid #c9c3b4;
+  border-radius: 6px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: none;
+  overflow: hidden;
+}
+
+.award-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.image-placeholder {
+  font: 700 12px "Barlow Condensed", sans-serif;
+  color: #9b978d;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.award-copy {
+  display: flex;
+  flex-direction: column;
+}
+
+.award-name {
+  font: 700 18px/1.15 "Barlow Condensed", sans-serif;
+  color: var(--ink);
+}
+
+.award-suffix {
+  font-size: 13.5px;
+  color: #6b6c66;
+  margin-top: 5px;
+  line-height: 1.25;
+}
+
+.empty {
+  padding: 30px 10px;
+  color: var(--muted);
+  font-size: 15px;
+  text-align: center;
+}
+
+/* Footer (Full military bar matching reference) */
+.footer {
+  background-color: var(--green);
+  border-top: 2px solid var(--gold2);
+  color: #b7baaf;
+  text-align: center;
+  padding: 18px 20px;
+  font-size: 13px;
+  margin-top: auto;
+}
+
+.footer a {
+  color: var(--gold);
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+.footer a:hover {
+  color: #fce183;
+}
+
+/* Tablet Layout */
+@media (max-width: 900px) {
+  .masthead-inner,
+  .page,
+  .tabs-inner {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .masthead h1 {
+    font-size: 31px;
+  }
+
+  .profile-body {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .profile-photo-wrap {
+    margin: 0 auto;
+  }
+
+  .profile-grid {
+    grid-template-columns: 1fr;
+    row-gap: 16px;
+  }
+
+  .award-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile Layout */
+@media (max-width: 600px) {
+  body:before {
+    height: 14px;
+  }
+
+  .tabs {
+    height: 50px;
+  }
+
+  .tab {
+    padding: 0 14px;
+    font-size: 15px;
+  }
+
+  .page {
+    margin-top: 18px;
+    margin-bottom: 40px;
+  }
+
+  .panel-title {
+    font-size: 20px;
+    padding: 12px 16px;
+  }
+
+  .panel-body {
+    padding: 18px 16px;
+  }
+
+  .profile-photo-wrap {
+    width: 100%;
+    max-width: 280px;
+    height: 190px;
+  }
+
+  .award-list {
+    grid-template-columns: 1fr;
+  }
+
+  .award-card {
+    min-height: 100px;
+  }
+
+  .award-image {
+    width: 76px;
+    height: 76px;
+  }
+
+  .award-name {
+    font-size: 17px;
+  }
+}
