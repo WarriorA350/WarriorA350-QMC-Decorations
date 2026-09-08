@@ -241,6 +241,12 @@ body:before {
   width: 100%;
   height: 100%;
   object-fit: contain;
+  cursor: zoom-in;
+  transition: transform 0.15s ease;
+}
+
+.award-image img:hover {
+  transform: scale(1.06);
 }
 
 .image-placeholder {
@@ -378,4 +384,70 @@ body:before {
   .award-name {
     font-size: 17px;
   }
+}
+
+/* Lightbox Modal (Enlarged Award View) */
+.image-modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  inset: 0;
+  background-color: rgba(17, 21, 15, 0.88);
+  backdrop-filter: blur(4px);
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+
+.image-modal.open {
+  display: flex;
+}
+
+.modal-content {
+  background: var(--paper);
+  border: 2px solid var(--gold);
+  border-radius: 6px;
+  padding: 24px;
+  max-width: 90vw;
+  max-height: 85vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.modal-content img {
+  max-width: 100%;
+  max-height: 65vh;
+  object-fit: contain;
+  display: block;
+}
+
+.modal-caption {
+  margin-top: 14px;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--ink);
+  letter-spacing: 0.8px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.modal-close {
+  position: absolute;
+  top: 8px;
+  right: 12px;
+  font-size: 26px;
+  line-height: 1;
+  color: var(--muted);
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.modal-close:hover {
+  color: var(--ink);
 }
