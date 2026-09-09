@@ -16,7 +16,7 @@ const RECORD = {
   timeOfService: "",
   position: "Group Commanding Officer",
   positionDate: "21/07/2026",
-  profileImage: "https://i.imgur.com/suejzjo.png",
+  profileImage: "https://i.imgur.com/AjbTVmy.jpeg",
 
   // Put only awards actually earned here. `group` controls the heading shown
   // on the Decorations page, matching the reference site's presentation.
