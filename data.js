@@ -186,7 +186,7 @@ const RECORD = {
     group: "Foreign Awards",
     name: "Republic of Korea Jump Wings",
     suffix: "Basic Airborne Wings",
-    image: "https://i.imgur.com/RrGFOx3.png"
+    image: "https://i.imgur.com/iVtHuRx.png"
   },
 {
     category: "badges",
