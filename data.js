@@ -282,6 +282,13 @@ const RECORD = {
 {
     category: "badges",
     group: "Ribbons",
+    name: "Afghanistan Campaign Medal",
+    suffix: "1st Award",
+    image: "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0f/Afghanistan_Campaign_Medal_ribbon.svg/1920px-Afghanistan_Campaign_Medal_ribbon.svg.png?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+  },
+{
+    category: "badges",
+    group: "Ribbons",
     name: "Iraq Campaign Medal",
     suffix: "3rd Award",
     image: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Iraq_Campaign_Medal_ribbon%2C_5th_award.svg/1920px-Iraq_Campaign_Medal_ribbon%2C_5th_award.svg.png?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
