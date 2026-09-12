@@ -303,6 +303,13 @@ const RECORD = {
 {
     category: "badges",
     group: "Ribbons",
+    name: "Humanitarian Service Ribbon",
+    suffix: "1st Award",
+    image: "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/26/Humanitarian_Service_Medal_ribbon.svg/1920px-Humanitarian_Service_Medal_ribbon.svg.png?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+  },
+{
+    category: "badges",
+    group: "Ribbons",
     name: "Army Overseas Service Medal",
     suffix: "",
     image: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Army_Overseas_Service_Ribbon.svg/1920px-Army_Overseas_Service_Ribbon.svg.png?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
