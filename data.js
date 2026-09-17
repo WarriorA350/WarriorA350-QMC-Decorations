@@ -311,7 +311,7 @@ const RECORD = {
     category: "badges",
     group: "Ribbons",
     name: "Humanitarian Service Ribbon",
-    suffix: "1st Award",
+    suffix: "2nd Award",
     image: "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/26/Humanitarian_Service_Medal_ribbon.svg/1920px-Humanitarian_Service_Medal_ribbon.svg.png?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
   },
 {
