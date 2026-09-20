@@ -129,7 +129,7 @@ const RECORD = {
     category: "badges",
     group: "Identification Badges",
     name: "Combat Service Identification Badge",
-    suffix: "John F. Kennedy, Southwest Asia Campaign, Iraq Campaign, Task Force Dagger",
+    suffix: "North Atlantic Treaty Organization, John F. Kennedy, Southwest Asia Campaign, Iraq Campaign, Task Force Dagger",
     image: "https://upload.wikimedia.org/wikipedia/commons/2/28/Combat-Service-Identification-Badges.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
   },
 {
@@ -320,6 +320,13 @@ const RECORD = {
     name: "Army Overseas Service Medal",
     suffix: "",
     image: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Army_Overseas_Service_Ribbon.svg/1920px-Army_Overseas_Service_Ribbon.svg.png?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+  },
+{
+    category: "badges",
+    group: "Ribbons",
+    name: "NATO Non-Article 5 Medal",
+    suffix: "1st Award",
+    image: "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/NATO_Medal_ribbon_%28Non-Article_5%29.svg/1920px-NATO_Medal_ribbon_%28Non-Article_5%29.svg.png?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
   },
 ],
 
