@@ -7,7 +7,7 @@ const RECORD = {
   username: "WarriorA350",
   robloxId: "4028570900",
   discordId: "1198689576093495348",
-  rank: "[E9B] Command Sergeant Major",
+  rank: "[E9B] Command Sergeant Major ",
   command: "Army Special Operation Command",
   division: "John F. Kennedy Special Warfare Center and School",
   brigade: "-",
