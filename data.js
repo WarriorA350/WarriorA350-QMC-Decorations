@@ -87,7 +87,7 @@ const RECORD = {
     category: "badges",
     group: "Group 4",
     name: "Military Freefall Badge",
-    suffix: "Basic - 3 Combat Jump Stars",
+    suffix: "Basic - 3 Combat Jump Stars ",
     image: "https://i.imgur.com/haYp6HO.png"
   },
 {
