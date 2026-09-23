@@ -254,6 +254,13 @@ const RECORD = {
 {
     category: "badges",
     group: "Ribbons",
+    name: "Military Justice Ribbon",
+    suffix: "",
+    image: "https://i.imgur.com/t60tBYY.png"
+  },
+{
+    category: "badges",
+    group: "Ribbons",
     name: "Army Recruiting Medal",
     suffix: "",
     image: "https://i.imgur.com/lvHoUVU.png"
