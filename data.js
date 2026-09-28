@@ -66,8 +66,8 @@ const RECORD = {
     category: "badges",
     group: "Group 4",
     name: "Army Parachutist Badge",
-    suffix: "Master - 3 Combat Jump Stars",
-    image: "https://i.imgur.com/1vF78xF.png"
+    suffix: "Master - 4 Combat Jump Stars",
+    image: "https://i.imgur.com/7qaDn2r.png"
   },
 {
     category: "badges",
@@ -129,7 +129,7 @@ const RECORD = {
     category: "badges",
     group: "Identification Badges",
     name: "Combat Service Identification Badge",
-    suffix: "North Atlantic Treaty Organization, John F. Kennedy, Southwest Asia Campaign, Iraq Campaign, Task Force Dagger",
+    suffix: "Afghanistan Campaign, North Atlantic Treaty Organization, John F. Kennedy, Southwest Asia Campaign, Iraq Campaign, Task Force Dagger",
     image: "https://upload.wikimedia.org/wikipedia/commons/2/28/Combat-Service-Identification-Badges.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
   },
 {
@@ -290,7 +290,7 @@ const RECORD = {
     category: "badges",
     group: "Ribbons",
     name: "Afghanistan Campaign Ribbon",
-    suffix: "1st Award",
+    suffix: "2nd Award",
     image: "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0f/Afghanistan_Campaign_Medal_ribbon.svg/1920px-Afghanistan_Campaign_Medal_ribbon.svg.png?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
   },
 {
@@ -299,6 +299,13 @@ const RECORD = {
     name: "Iraq Campaign Medal",
     suffix: "3rd Award",
     image: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Iraq_Campaign_Medal_ribbon%2C_5th_award.svg/1920px-Iraq_Campaign_Medal_ribbon%2C_5th_award.svg.png?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+  },
+{
+    category: "badges",
+    group: "Ribbons",
+    name: "Joint Special Operation Campaign",
+    suffix: "",
+    image: "https://i.imgur.com/iBBIiFW.png"
   },
 {
     category: "badges",
