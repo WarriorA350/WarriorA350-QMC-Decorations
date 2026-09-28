@@ -4,7 +4,7 @@
   does not contain a personal public profile for a specific user.
 */
 const RECORD = {
-  username: "WarriorA350",
+  username: "WarriorA350 ",
   robloxId: "4028570900",
   discordId: "1198689576093495348",
   rank: "[E9B] Command Sergeant Major ",
