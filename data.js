@@ -66,7 +66,7 @@ const RECORD = {
     category: "badges",
     group: "Group 4",
     name: "Army Parachutist Badge",
-    suffix: "Master - 4 Combat Jump Stars",
+    suffix: "Master - 4 Combat Jump Stars ",
     image: "https://i.imgur.com/7qaDn2r.png"
   },
 {
