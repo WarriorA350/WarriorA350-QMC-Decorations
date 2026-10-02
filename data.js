@@ -95,7 +95,7 @@ const RECORD = {
     group: "Group 4",
     name: "Special Operations Diver Badge",
     suffix: "Basic",
-    image: "https://i.imgur.com/69HJLN5.png"
+    image: "https://i.imgur.com/LjIu4wp.png"
   },
 {
     category: "badges",
