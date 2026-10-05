@@ -143,7 +143,7 @@ const RECORD = {
     category: "badges",
     group: "Service Awards",
     name: "Overseas Service Bars",
-    suffix: "8th Award",
+    suffix: "9th Award ",
     image: "https://upload.wikimedia.org/wikipedia/commons/8/88/ASU_overseas_service_bar.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
   },
 {
