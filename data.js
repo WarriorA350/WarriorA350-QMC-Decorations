@@ -186,14 +186,14 @@ const RECORD = {
     group: "Foreign Awards",
     name: "Republic of Korea Jump Wings",
     suffix: "Basic Airborne Wings",
-    image: "https://i.imgur.com/iVtHuRx.png"
+    image: "https://i.imgur.com/otHdoub.png"
   },
 {
     category: "badges",
     group: "Foreign Awards",
     name: "Special Air Service Parachute Wings",
     suffix: "",
-    image: "https://i.imgur.com/6LFTGx0.png"
+    image: "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/29/British_Army_SAS_Parachute_Badge_with_Wings.png/500px-British_Army_SAS_Parachute_Badge_with_Wings.png?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail"
   },
 {
     category: "badges",
