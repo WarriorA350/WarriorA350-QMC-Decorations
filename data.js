@@ -14,7 +14,7 @@ const RECORD = {
   company: "-",
   joinDate: "10/03/2026",
   timeOfService: "",
-  position: "Regimental Command Sergeant Major",
+  position: "Regimental Command Sergeant Major ",
   positionDate: "15/09/2026",
   profileImage: "https://i.imgur.com/AjbTVmy.jpeg",
 
@@ -136,14 +136,14 @@ const RECORD = {
     category: "badges",
     group: "Skill Tabs",
     name: "Ranger Tab",
-    suffix: " ",
+    suffix: "",
     image: "https://upload.wikimedia.org/wikipedia/commons/8/83/Ranger_Tab_-_Dress_Metal.png?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
   },
 {
     category: "badges",
     group: "Skill Tabs",
     name: "Sapper Tab ",
-    suffix: " ",
+    suffix: "",
     image: "https://upload.wikimedia.org/wikipedia/commons/9/94/Sapper_Tab.png?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
   },
 {
