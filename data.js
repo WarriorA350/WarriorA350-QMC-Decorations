@@ -87,8 +87,8 @@ const RECORD = {
     category: "badges",
     group: "Group 4",
     name: "Military Freefall Badge",
-    suffix: "Basic - 3 Combat Jump Stars ",
-    image: "https://i.imgur.com/haYp6HO.png"
+    suffix: "Master - 3 Combat Jump Stars ",
+    image: "https://i.imgur.com/vm5u586.png"
   },
 {
     category: "badges",
@@ -115,15 +115,15 @@ const RECORD = {
     category: "badges",
     group: "Identification Badges",
     name: "Army Instructor Identification Badge",
-    suffix: "Senior",
-    image: "https://upload.wikimedia.org/wikipedia/commons/b/b1/US_Army_Senior_Instructor_ID_Badge.png?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+    suffix: "Master",
+    image: "https://upload.wikimedia.org/wikipedia/commons/e/e8/US_Army_Master_Instructor_ID_Badge.png?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
   },
 {
     category: "badges",
     group: "Identification Badges",
     name: "Army Recruiter Badge",
-    suffix: "Gold",
-    image: "https://upload.wikimedia.org/wikipedia/commons/0/0a/Gold_Recruiting_Badge.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+    suffix: "Master",
+    image: "https://upload.wikimedia.org/wikipedia/commons/7/72/Master_Recruiter.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original"
   },
 {
     category: "badges",
@@ -199,8 +199,8 @@ const RECORD = {
     category: "badges",
     group: "Foreign Awards",
     name: "Republic of Korea Jump Wings",
-    suffix: "Basic Airborne Wings",
-    image: "https://i.imgur.com/otHdoub.png"
+    suffix: "Senior Airborne Wings",
+    image: "https://i.imgur.com/5AEq0dB.png"
   },
 {
     category: "badges",
