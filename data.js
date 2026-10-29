@@ -234,7 +234,7 @@ const RECORD = {
     category: "badges",
     group: "Ribbons",
     name: "Army of Occupation Medal",
-    suffix: "1st Award",
+    suffix: "",
     image: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Army_of_Occupation_ribbon.svg/1920px-Army_of_Occupation_ribbon.svg.png?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
   },
 {
