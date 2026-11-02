@@ -66,8 +66,8 @@ const RECORD = {
     category: "badges",
     group: "Group 4",
     name: "Army Parachutist Badge",
-    suffix: "Master - 4 Combat Jump Stars ",
-    image: "https://i.imgur.com/7qaDn2r.png"
+    suffix: "Master - 5 Combat Jump Stars ",
+    image: "https://i.imgur.com/3wwzadX.png"
   },
 {
     category: "badges",
@@ -304,7 +304,7 @@ const RECORD = {
     category: "badges",
     group: "Ribbons",
     name: "Afghanistan Campaign Ribbon",
-    suffix: "2nd Award",
+    suffix: "3rd Award",
     image: "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0f/Afghanistan_Campaign_Medal_ribbon.svg/1920px-Afghanistan_Campaign_Medal_ribbon.svg.png?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
   },
 {
