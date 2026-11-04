@@ -193,7 +193,7 @@ const RECORD = {
     group: "Foreign Awards",
     name: "National Guard Bureau's Chief's 50 Marksmanship Badge",
     suffix: "",
-    image: "https://upload.wikimedia.org/wikipedia/commons/d/de/Chiefs_50_Marksmanship_Badge.png?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+    image: "https://i.imgur.com/MFbXAF0.png"
   },
 {
     category: "badges",
