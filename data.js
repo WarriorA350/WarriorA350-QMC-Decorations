@@ -4,7 +4,7 @@
   does not contain a personal public profile for a specific user.
 */
 const RECORD = {
-  username: "WarriorA350   ",
+  username: "WarriorA350",
   robloxId: "4028570900",
   discordId: "1198689576093495348",
   rank: "[E9B] Command Sergeant Major ",
@@ -14,9 +14,9 @@ const RECORD = {
   company: "-",
   joinDate: "10/03/2026",
   timeOfService: "",
-  position: "Regimental Command Sergeant Major ",
+  position: "Regimental Sergeant Major ",
   positionDate: "15/09/2026",
-  profileImage: "https://i.imgur.com/AjbTVmy.jpeg",
+  profileImage: "https://i.imgur.com/1VgpzOd.png",
 
   // Put only awards actually earned here. `group` controls the heading shown
   // on the Decorations page, matching the reference site's presentation.
