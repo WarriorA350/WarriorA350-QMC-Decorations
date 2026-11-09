@@ -38,8 +38,8 @@ const RECORD = {
     category: "badges",
     group: "Group 1",
     name: "Master Combat Action Badge",
-    suffix: "1st Award",
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Master_combat_action_badge_illustration.svg/1920px-Master_combat_action_badge_illustration.svg.png?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    suffix: "2nd Award",
+    image: "https://upload.wikimedia.org/wikipedia/commons/c/cd/Master_Combat_Action_Badge_2x_Award.png?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
   },
 {
     category: "badges",
@@ -129,7 +129,7 @@ const RECORD = {
     category: "badges",
     group: "Identification Badges",
     name: "Combat Service Identification Badge",
-    suffix: "Afghanistan Campaign, North Atlantic Treaty Organization, John F. Kennedy, Southwest Asia Campaign, Iraq Campaign, Task Force Dagger",
+    suffix: "John F. Kennedy, Southwest Asia Campaign, Iraq Campaign, Task Force Dagger, North Atlantic Treaty Organization, Afghanistan Campaign",
     image: "https://upload.wikimedia.org/wikipedia/commons/2/28/Combat-Service-Identification-Badges.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
   },
 {
@@ -320,6 +320,13 @@ const RECORD = {
     name: "Joint Special Operation Campaign",
     suffix: "",
     image: "https://i.imgur.com/iBBIiFW.png"
+  },
+{
+    category: "badges",
+    group: "Ribbons",
+    name: "Korean War Service Medal",
+    suffix: "",
+    image: "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f9/Republic_of_Korea_War_Service_Medal_ribbon.svg/1920px-Republic_of_Korea_War_Service_Medal_ribbon.svg.png?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
   },
 {
     category: "badges",
