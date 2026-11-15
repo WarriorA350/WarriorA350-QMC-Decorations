@@ -360,8 +360,15 @@ const RECORD = {
     category: "badges",
     group: "Ribbons",
     name: "NATO Non-Article 5 Medal",
+    suffix: "2nd Award",
+    image: "https://i.imgur.com/9lc2lZK.png"
+  },
+{
+    category: "badges",
+    group: "Ribbons",
+    name: "NATO Article 5 Medal",
     suffix: "1st Award",
-    image: "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/NATO_Medal_ribbon_%28Non-Article_5%29.svg/1920px-NATO_Medal_ribbon_%28Non-Article_5%29.svg.png?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    image: "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f5/NATO_Medal_ribbon_%28Article_5%29.svg/1920px-NATO_Medal_ribbon_%28Article_5%29.svg.png?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
   },
 {
     category: "badges",
