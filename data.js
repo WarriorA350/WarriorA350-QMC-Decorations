@@ -205,6 +205,13 @@ const RECORD = {
 {
     category: "badges",
     group: "Foreign Awards",
+    name: "British Skill at Arms Badge",
+    suffix: "",
+    image: "https://www.contactleft.co.uk/media/catalog/product/cache/207e23213cf636ccdef205098cf3c8a3/t/b/tb27-skill-at-arms-badge_1.jpg"
+  },
+{
+    category: "badges",
+    group: "Foreign Awards",
     name: "Special Air Service Parachute Wings",
     suffix: "",
     image: "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/29/British_Army_SAS_Parachute_Badge_with_Wings.png/500px-British_Army_SAS_Parachute_Badge_with_Wings.png?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail"
