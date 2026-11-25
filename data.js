@@ -59,8 +59,8 @@ const RECORD = {
     category: "badges",
     group: "Group 3",
     name: "Explosive Ordnance Disposal Badge",
-    suffix: "Basic",
-    image: "https://i.etsystatic.com/10828952/r/il/094da4/1507539549/il_570xN.1507539549_cysd.jpg"
+    suffix: "Senior",
+    image: "https://i.imgur.com/ZDbr7ov.png"
   },
 {
     category: "badges",
@@ -108,7 +108,7 @@ const RECORD = {
     category: "badges",
     group: "Group 5",
     name: "Marksmanship Badges",
-    suffix: "Expert - Rifle Clasp",
+    suffix: "Expert - Rifle Clasp, Pistol Clasp",
     image: "https://upload.wikimedia.org/wikipedia/commons/3/3a/United_States_Army_Marksmanship_Qualification_Badges.png?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
   },
 {
@@ -207,7 +207,7 @@ const RECORD = {
     group: "Foreign Awards",
     name: "British Skill at Arms Badge",
     suffix: "",
-    image: "https://www.contactleft.co.uk/media/catalog/product/cache/207e23213cf636ccdef205098cf3c8a3/t/b/tb27-skill-at-arms-badge_1.jpg"
+    image: "https://i.ebayimg.com/images/g/n9oAAOxydgZTIIKG/s-l400.jpg"
   },
 {
     category: "badges",
